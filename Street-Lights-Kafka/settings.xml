@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="fb887bfb-475d-4a7e-a2d6-ed1803e91f69" name="Street Lights Kafka">
+  <con:settings id="051858c9-94e8-4273-9a4f-aae308faff75">
+    <con:setting id="fb887bfb-475d-4a7e-a2d6-ed1803e91f69fileName">Street-Lights-Kafka</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

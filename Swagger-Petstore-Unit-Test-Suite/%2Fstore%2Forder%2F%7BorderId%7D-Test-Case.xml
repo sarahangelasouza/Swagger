@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="fbeb1ec2-8197-4435-8127-f09d4a23b145" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/store/order/{orderId} Test Case" searchProperties="true" timeout="0">
+  <con:description id="10889bd8-afc1-437d-b39a-aed18a7ffc42">The test case generated for the REST resource [/store/order/{orderId}] located at [/store/order/{orderId}]</con:description>
+  <con:settings>
+    <con:setting id="fbeb1ec2-8197-4435-8127-f09d4a23b145fileName">%2Fstore%2Forder%2F%7BorderId%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="7550c945-e3ec-44c0-9552-894b61ae6962">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/store/order/{orderId}" methodName="getOrderById" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="72fa8ee6-231c-42f5-bf9a-70d944d53779" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/store/order/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

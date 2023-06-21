@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/user/login" path="/user/login" id="f4e0fc81-c4f6-40ac-ad67-a4bcd8cdcfec">
+  <con:settings id="c27eeb1a-c9c2-44f9-956a-a52f2671a1ff">
+    <con:setting id="f4e0fc81-c4f6-40ac-ad67-a4bcd8cdcfecfileName">%2Fuser%2Flogin</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="loginUser" id="1d69dfdc-8505-4ed1-9e79-e892c2fe6338" method="GET">
+    <con:description>Logs user into the system</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>username</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The user name for login</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>password</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The password for login in clear text</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>&lt;string>string&lt;/string></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>"string"</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d9fc8b5a-66f1-4e58-ad40-18739d3d6ef1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

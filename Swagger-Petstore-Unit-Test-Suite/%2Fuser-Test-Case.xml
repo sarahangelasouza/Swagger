@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dfca07af-0bea-4b39-a203-29cf1bf5fb72" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user Test Case" searchProperties="true" timeout="0">
+  <con:description id="82f3b2f9-9c0b-45b5-ab77-c6a94e0e0dc5">The test case generated for the REST resource [/user] located at [/user]</con:description>
+  <con:settings>
+    <con:setting id="dfca07af-0bea-4b39-a203-29cf1bf5fb72fileName">%2Fuser-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b10fdfae-464a-4e6b-ba42-9ed2a7333ac8">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/user" methodName="createUser" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="c0e8fb44-4ff4-412c-9fbc-5d67e14e1547" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/user</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

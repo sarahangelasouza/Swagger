@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1596ab2f-76fa-48e6-b569-db539e527bfd" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByTags Test Case" searchProperties="true" timeout="0">
+  <con:description id="90504bb4-2ee6-4893-9ec2-eec462b6d667">The test case generated for the REST resource [/pet/findByTags] located at [/pet/findByTags]</con:description>
+  <con:settings>
+    <con:setting id="1596ab2f-76fa-48e6-b569-db539e527bfdfileName">%2Fpet%2FfindByTags-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="fcc4c251-1c47-4b0b-8193-fd18b9fa32d9">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/findByTags" methodName="findPetsByTags" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="e59f183e-b804-4808-932f-a20e3f116a6a" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/pet/findByTags</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

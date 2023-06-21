@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="19430a71-b36f-429d-a403-83c3607e7f29" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByStatus Test Case" searchProperties="true" timeout="0">
+  <con:description id="a90cdaac-e8bc-4b59-8c75-99f5ff584bc7">The test case generated for the REST resource [/pet/findByStatus] located at [/pet/findByStatus]</con:description>
+  <con:settings>
+    <con:setting id="19430a71-b36f-429d-a403-83c3607e7f29fileName">%2Fpet%2FfindByStatus-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="89abdc08-ea44-4bb2-bbc6-c2a8e7d890d8">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/findByStatus" methodName="findPetsByStatus" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="2de79ab0-4c73-490f-93e6-52dcf3d50b2f" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

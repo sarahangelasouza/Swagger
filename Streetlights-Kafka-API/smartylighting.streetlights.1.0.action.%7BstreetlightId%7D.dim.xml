@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:channel xmlns:con="http://eviware.com/soapui/config" name="smartylighting.streetlights.1.0.action.{streetlightId}.dim" id="9e01b459-0bae-4034-a053-2c332658f233">
+  <con:settings id="d5b1a4c6-0130-4c56-8085-1655529eb13f">
+    <con:setting id="9e01b459-0bae-4034-a053-2c332658f233fileName">smartylighting.streetlights.1.0.action.%7BstreetlightId%7D.dim</con:setting>
+  </con:settings>
+  <con:subscribeOperation name="Subscribe" id="883e3612-3b83-4cc8-8952-4ecb58050a1a">
+    <con:settings/>
+  </con:subscribeOperation>
+</con:channel>

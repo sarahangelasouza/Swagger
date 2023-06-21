@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:channel xmlns:con="http://eviware.com/soapui/config" name="smartylighting.streetlights.1.0.action.{streetlightId}.turn.on" id="0f67c171-86b7-48a5-9e8b-76c2c309c0b9">
+  <con:settings id="5c2fef1a-687c-4668-87f1-4d0285a89a30">
+    <con:setting id="0f67c171-86b7-48a5-9e8b-76c2c309c0b9fileName">smartylighting.streetlights.1.0.action.%7BstreetlightId%7D.turn.on</con:setting>
+  </con:settings>
+  <con:subscribeOperation name="Subscribe" id="7b0fdc3f-09e9-4db4-9346-aed571de34a3">
+    <con:settings/>
+  </con:subscribeOperation>
+</con:channel>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="692feacd-dbc7-4892-88da-f797e3664532" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/{petId}/uploadImage Test Case" searchProperties="true" timeout="0">
+  <con:description id="7e45bea2-410d-4c7c-a634-837a32cf052c">The test case generated for the REST resource [/pet/{petId}/uploadImage] located at [/pet/{petId}/uploadImage]</con:description>
+  <con:settings>
+    <con:setting id="692feacd-dbc7-4892-88da-f797e3664532fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="22eb9588-916d-4222-9b19-35250461d7a8">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="05229be5-8aa4-4ae9-807d-b6c5e46280ab" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/pet/uploadImage</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

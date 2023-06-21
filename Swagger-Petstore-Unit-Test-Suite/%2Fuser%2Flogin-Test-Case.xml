@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="41d8b9e4-eccd-426a-9876-51c47a570bed" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user/login Test Case" searchProperties="true" timeout="0">
+  <con:description id="bdaebff6-a8da-4d35-9621-6da3ad22df3b">The test case generated for the REST resource [/user/login] located at [/user/login]</con:description>
+  <con:settings>
+    <con:setting id="41d8b9e4-eccd-426a-9876-51c47a570bedfileName">%2Fuser%2Flogin-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="26fee13a-25ca-48ee-bdce-2cfe7bae9ac9">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/user/login" methodName="loginUser" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="d9fc8b5a-66f1-4e58-ad40-18739d3d6ef1" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/user/login</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

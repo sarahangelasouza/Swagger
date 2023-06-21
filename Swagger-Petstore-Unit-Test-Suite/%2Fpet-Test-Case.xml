@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="e5631145-406f-4f7e-a1b0-7dccd58569dd" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet Test Case" searchProperties="true" timeout="0">
+  <con:description id="430a9aaf-6f0a-415c-aa70-720d019a31e4">The test case generated for the REST resource [/pet] located at [/pet]</con:description>
+  <con:settings>
+    <con:setting id="e5631145-406f-4f7e-a1b0-7dccd58569ddfileName">%2Fpet-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b07f6752-5f5e-4810-ada9-dcb452fbaec0">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="27b269e0-3278-43fa-ae58-5e4548b90c34" mediaType="application/json" postQueryString="false">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+        <con:originalUri>https://petstore.swagger.io/v2/pet</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/store/order" path="/store/order" id="2629b2bb-35a4-4de7-adc0-ed6535000c17">
+  <con:settings id="a1d3acff-6059-43f6-ba73-e4ea6990a9a5">
+    <con:setting id="2629b2bb-35a4-4de7-adc0-ed6535000c17fileName">%2Fstore%2Forder</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="placeOrder" id="9aa957a3-2916-4f1f-9f2d-2849daff2453" method="POST">
+    <con:description>Place an order for a pet</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b966add6-c9e3-411a-800b-291eb2deb85b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2a08cc04-357c-4319-acd6-a672727ea04c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user/createWithArray Test Case" searchProperties="true" timeout="0">
+  <con:description id="7c7be442-808c-4994-94a6-1cd85c6d3433">The test case generated for the REST resource [/user/createWithArray] located at [/user/createWithArray]</con:description>
+  <con:settings>
+    <con:setting id="2a08cc04-357c-4319-acd6-a672727ea04cfileName">%2Fuser%2FcreateWithArray-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="634678eb-9d14-4220-bb84-b91c72e7a1b3">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/user/createWithArray" methodName="createUsersWithArrayInput" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="54fed3dd-e7a3-43b2-b5f7-22db2e30a3c8" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/user/createWithArray</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

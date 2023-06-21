@@ -1,0 +1,14 @@
+%2Fpet-Test-Case.xml
+%2Fpet%2FfindByStatus-Test-Case.xml
+%2Fpet%2FfindByTags-Test-Case.xml
+%2Fpet%2F%7BpetId%7D-Test-Case.xml
+%2Fpet%2F%7BpetId%7D%2FuploadImage-Test-Case.xml
+%2Fstore%2Finventory-Test-Case.xml
+%2Fstore%2Forder-Test-Case.xml
+%2Fstore%2Forder%2F%7BorderId%7D-Test-Case.xml
+%2Fuser-Test-Case.xml
+%2Fuser%2FcreateWithArray-Test-Case.xml
+%2Fuser%2FcreateWithList-Test-Case.xml
+%2Fuser%2Flogin-Test-Case.xml
+%2Fuser%2Flogout-Test-Case.xml
+%2Fuser%2F%7Busername%7D-Test-Case.xml

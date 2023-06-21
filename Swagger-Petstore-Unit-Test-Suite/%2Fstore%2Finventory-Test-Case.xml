@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="00b9e8f1-4045-42a0-a23d-c23befccfc30" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/store/inventory Test Case" searchProperties="true" timeout="0">
+  <con:description id="4a0e39ea-8f1a-4f46-bc7b-1cdac71ae9b9">The test case generated for the REST resource [/store/inventory] located at [/store/inventory]</con:description>
+  <con:settings>
+    <con:setting id="00b9e8f1-4045-42a0-a23d-c23befccfc30fileName">%2Fstore%2Finventory-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="acf4baf3-c4e8-46af-a7c0-ea63081de51a">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/store/inventory" methodName="getInventory" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="ba3d73fa-1c50-431a-9cb3-f9f3f9e0f054" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/store/inventory</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

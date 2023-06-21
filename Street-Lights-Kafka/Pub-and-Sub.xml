@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="a9f27a8b-f683-4255-a168-77a9516a330b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Pub and Sub" searchProperties="true" timeout="0">
+  <con:settings id="80dc253b-44ff-4ccf-a099-6f2cb4eae2e1">
+    <con:setting id="a9f27a8b-f683-4255-a168-77a9516a330bfileName">Pub-and-Sub</con:setting>
+  </con:settings>
+  <con:testStep type="multiConfigureTestStep" name="Publish Street Lights" id="016540ab-b211-4df7-8e51-8db6e248c7af">
+    <con:settings/>
+    <con:config activeStep="kafkaPublishTestStep" xsi:type="con:MultiConfigurationStep">
+      <con:kafkaPublishStep>
+        <con:operationId>2d5f2555-c320-4843-9de0-34c5d9de9841</con:operationId>
+        <con:operationName>Publish</con:operationName>
+        <con:channelName>smartylighting.streetlights.1.0.event.{streetlightId}.lighting.measured</con:channelName>
+        <con:serviceName>Streetlights Kafka API</con:serviceName>
+        <con:endpoint>test.mykafkacluster.org:8092</con:endpoint>
+        <con:connectionProperties/>
+        <con:schemaRegistry/>
+        <con:messageType>JSON</con:messageType>
+        <con:message/>
+        <con:parameters>
+          <con:parameter>
+            <con:name/>
+            <con:value xsi:nil="true"/>
+            <con:type>Header</con:type>
+          </con:parameter>
+        </con:parameters>
+      </con:kafkaPublishStep>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="multiConfigureTestStep" name="Subscribe Street Lights" id="c34031e5-d5a1-41fb-b96b-31bffc100cf6">
+    <con:settings/>
+    <con:config activeStep="kafkaSubscribeTestStep" xsi:type="con:MultiConfigurationStep">
+      <con:kafkaSubscribeStep>
+        <con:operationId>7b0fdc3f-09e9-4db4-9346-aed571de34a3</con:operationId>
+        <con:operationName>Subscribe</con:operationName>
+        <con:channelName>smartylighting.streetlights.1.0.action.{streetlightId}.turn.on</con:channelName>
+        <con:serviceName>Streetlights Kafka API</con:serviceName>
+        <con:endpoint>test.mykafkacluster.org:8092</con:endpoint>
+        <con:connectionProperties/>
+        <con:schemaRegistry/>
+        <con:messageType>JSON</con:messageType>
+        <con:closeConditionType>ANY_CONDITION</con:closeConditionType>
+        <con:maxIdleTime>60</con:maxIdleTime>
+        <con:maxMessagesReceived>50</con:maxMessagesReceived>
+        <con:maxRunTime>60</con:maxRunTime>
+        <con:ignoreMessagesBeforeConnect>false</con:ignoreMessagesBeforeConnect>
+      </con:kafkaSubscribeStep>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

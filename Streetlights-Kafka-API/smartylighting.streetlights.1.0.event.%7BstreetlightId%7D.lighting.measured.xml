@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:channel xmlns:con="http://eviware.com/soapui/config" name="smartylighting.streetlights.1.0.event.{streetlightId}.lighting.measured" id="b7fc8d53-ebcd-408d-869a-70e8f43ded6e">
+  <con:description id="1f80a5ff-302a-4f4c-a01e-7083e59bae8f">The topic on which measured values may be produced and consumed.</con:description>
+  <con:settings>
+    <con:setting id="b7fc8d53-ebcd-408d-869a-70e8f43ded6efileName">smartylighting.streetlights.1.0.event.%7BstreetlightId%7D.lighting.measured</con:setting>
+  </con:settings>
+  <con:publishOperation name="Publish" id="2d5f2555-c320-4843-9de0-34c5d9de9841">
+    <con:settings/>
+  </con:publishOperation>
+</con:channel>

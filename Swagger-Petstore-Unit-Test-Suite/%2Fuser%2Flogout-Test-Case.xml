@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="f3008c94-557e-47ce-99c1-0a254fd52da5" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user/logout Test Case" searchProperties="true" timeout="0">
+  <con:description id="d3231f76-ba38-4a8f-bba9-926df2450ba4">The test case generated for the REST resource [/user/logout] located at [/user/logout]</con:description>
+  <con:settings>
+    <con:setting id="f3008c94-557e-47ce-99c1-0a254fd52da5fileName">%2Fuser%2Flogout-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="3116920e-6955-4360-804f-1990fa74bc45">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/user/logout" methodName="logoutUser" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="428964fd-08f4-485d-8d56-d6c569e574ca" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/user/logout</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

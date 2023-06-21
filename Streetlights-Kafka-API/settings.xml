@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:MessageDrivenService" id="cd0ff317-9228-4f87-b418-321d517c82a3" name="Streetlights Kafka API" type="messagedrivenservice" definitionVersion="1.0.0" definitionUrl="https://api.swaggerhub.com/apis/AlexsDemoOrg/StreetlightsAPI/1.0.0?resolved=true">
-  <con:description id="46fccfc9-829e-4813-af15-9f595ee334ef">The Smartylighting Streetlights API allows you to remotely manage the city lights.
+  <con:description id="f7a7d8b6-cff5-4e0f-9e5e-5f00d9f3ced2">The Smartylighting Streetlights API allows you to remotely manage the city lights.
 
 ### Check out its awesome features:
 
